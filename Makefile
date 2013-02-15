@@ -10,6 +10,6 @@ ifdef HEROKU
 endif
 
 koop: new
-	cd koop-template && rm index.jade
 	cd koop-template && cp -rf * ../$(P)
+	cd $(P) && rm index.jade
 	cd $(P) && git add -A && git commit -m "Added koop template files."
