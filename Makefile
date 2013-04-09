@@ -1,4 +1,4 @@
-
+#Usage: P=SiteName make koop
 new:
 	mkdir $(P)
 	cd node-skeleton && cp -rf * ../$(P)
